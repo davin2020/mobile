@@ -19,7 +19,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: rgb(61, 123, 165);
-	font: verdana;
+	font-family: Verdana;
 }
 
 .mainContainerGrid {
@@ -50,5 +50,14 @@ body {
 }
 
 footer {
+	text-align: center;
+}
+.fontCursive {
+	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+}
+
+.colorFontSections {
+	color: rgb(87, 24, 103);
+	font-size: 200%;
 	text-align: center;
 }
