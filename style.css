@@ -25,31 +25,48 @@ body {
 
 header {
 	text-align: center;
-	padding: 20px 0px ;
+/*	padding: 40px 0px ;*/
 	font-size: 120%;
-	margin-bottom: 20px;
+/*	margin-bottom: 20px;*/
 }
 
 nav {
-	margin: 20px;
+/*	background-color: gray;*/
+/*	margin: 20px;*/
 	padding: 20px;
 }
 
+nav a {
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+/*	background-color: gray;*/
+}
+
+nav a:hover {
+	background-color: rgb(61, 123, 165);
+}
+
+.fontSizeNav {
+	font-size: 200%;
+}
 main {
-	margin-top: 50px;
+/*	margin-top: 50px;*/
 }
 
 .mainContainerGrid {
+	/*
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: 40px auto auto auto auto 40px;
-	
+	*/
 }
 .containerFlex {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-content: space-around;
+	width: 100%;
 }
 
 .colorHeaderFooter {
@@ -78,6 +95,10 @@ footer {
 	text-align: center;
 	padding: 20px ;
 	font-size: 80%;
+}
+footer a {
+	color: white;
+	text-decoration: none;
 }
 .fontCursive {
 	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
@@ -162,3 +183,6 @@ h1 {
 /*	float: right;*/
 	
 }
+
+separated out name
+moved bkg img from AboutMe to section above and adjusted its layout
