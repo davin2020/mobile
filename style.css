@@ -9,6 +9,11 @@ rgb(61, 123, 165)
 light blue
 rgb(82, 165, 224)
 
+/*light blue (same hue but more light)*/
+background-color:  hsl(205, 70%, 75%); 
+
+/*dark blue (same hue but more dark)*/
+background-color:  hsl(205, 70%, 60%);
 */
 
 * {
@@ -76,7 +81,12 @@ main {
 }
 
 .colorBackgroundLight {
-	background-color: rgb(82, 165, 224);
+	/*lighter stone blue*/
+	background-color: hsl(204, 46%, 44%);
+/*	background-color: rgb(82, 165, 224);*/
+	
+	/*light blue (same hue but more light)*/
+/*	background-color:  hsl(205, 70%, 75%);*/
 /*	margin-bottom: 20px;*/
 	padding: 1px 0px;
 	padding-top: 10px;
@@ -85,7 +95,12 @@ main {
 }
 
 .colorBackgroundDark {
-	background-color: rgb(61, 123, 165);
+/*darker stone blue*/
+/*	background-color: rgb(61, 123, 165);*/ 
+	background-color:  hsl(204, 46%, 52%);
+	
+	/*dark blue (same hue but more dark)*/
+/*	background-color:  hsl(205, 70%, 60%);*/
 /*	margin-bottom: 20px;*/
 	padding: 1px 0px;
 	padding-top: 10px;
@@ -110,8 +125,6 @@ footer a {
 
 .colorFontSections {
 	color: rgb(87, 24, 103);
-	font-size: 200%;
-	font-style: bold;
 	text-align: center;
 }
 
@@ -126,7 +139,12 @@ footer a {
 h1 {
 	margin: 0px;
 	padding-top: 10px;
+	font-size: 210%;
+/*	font-style: bold;*/
 /*	padding-bottom: 5px;*/
+}
+h2 {
+	font-size: 130%;
 }
 .bkgImageCoding {
 /*	background-image: url("bkg_coding_dark.jpg");*/
