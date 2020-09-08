@@ -170,8 +170,8 @@ main {
 .textAboutMe {
 /*	display: flex;*/
 	color: white;
-	background-color: black;
-/*	background-color: rgb(87, 24, 103);*/
+/*	background-color: black;*/
+	background-color: rgb(87, 24, 103);
 	padding: 10px;
 	vertical-align: middle;
 	margin-top: 0px;
@@ -204,6 +204,10 @@ h2 {
 	font-size: 130%;
 }
 
+.justifyLeft {
+	text-align: left;
+}
+
 
 /* ------------------------------------------
 	FOOTER 
@@ -218,12 +222,13 @@ footer a {
 	text-decoration: none;
 }
 
+/*
 .textOnTopImage {
 	position: relative;
 	z-index: 20px;
 	width: 100%;
 }
-
+*/
 
 /* ------------------------------------------
 	COLOR Referencces 
