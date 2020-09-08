@@ -124,6 +124,7 @@ main {
 	background-color: rgb(87, 24, 103);
 	padding: 10px;
 	vertical-align: middle;
+/* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 20px;
