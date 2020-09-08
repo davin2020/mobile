@@ -13,7 +13,7 @@ body {
 	margin: 0;
 /*	background-color: rgb(61, 123, 165);*/
 	font-family: Verdana;
-	font-size: 100%;
+	font-size: 90%;
 }
 
 
@@ -26,16 +26,18 @@ body {
 
 .colorBackgroundDark {
 	/*darker stone blue*/
-	background-color:  hsl(204, 46%, 52%);
+	background-color:  hsl(204, 46%, 44%);
 	padding: 1px 0px;
 	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 .colorBackgroundLight {
 	/*lighter stone blue*/
-	background-color: hsl(204, 46%, 44%);
+	background-color: hsl(204, 46%, 52%);
 	padding: 1px 0px;
 	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 .fontCursive {
@@ -75,6 +77,7 @@ nav a:hover {
 	background-color: rgb(61, 123, 165);
 }
 
+/* ad in visited links color */
 
 /* ---------------------------------------------------------------------
 	MAIN Section with background image & containers & content formatting 
@@ -104,9 +107,17 @@ main {
 
 .articleBox {
 	padding: 10px;
-	margin: 10px;
+	margin: 10px 20px;
 	flex: 1 1 250px;
 	text-align: center;
+}
+
+.articleBorder {
+	border: 5px solid black;
+	border-radius: 10px;
+	border-color:  hsl(204, 46%, 20%);
+/*	border-color: rgb(87, 24, 103);*/
+/*	border-color: white;*/
 }
 
 .contentIntro {
@@ -142,7 +153,7 @@ main {
 
 h1 {
 	margin: 0px;
-	padding-top: 10px;
+	padding: 10px 0px;
 	font-size: 210%;
 }
 
