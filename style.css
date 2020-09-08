@@ -1,0 +1,197 @@
+/* CSS Fiile for Davins Portfolio */
+
+
+/* -------------------------------------------------------------
+	Generic Body Stuff 
+---------------------------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+/*	background-color: rgb(61, 123, 165);*/
+	font-family: Verdana;
+	font-size: 100%;
+}
+
+
+/* ----------------------------------------------------------
+	Generic Classes for Containers & Cursive Font for Sections
+------------------------------------------------------------- */
+/* Need to add some Media Queries here */
+.mainContainerGrid {
+}
+
+.colorBackgroundDark {
+	/*darker stone blue*/
+	background-color:  hsl(204, 46%, 52%);
+	padding: 1px 0px;
+	padding-top: 10px;
+}
+
+.colorBackgroundLight {
+	/*lighter stone blue*/
+	background-color: hsl(204, 46%, 44%);
+	padding: 1px 0px;
+	padding-top: 10px;
+}
+
+.fontCursive {
+	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+}
+
+
+/* ------------------------------------------
+	HEADER & NAV 
+--------------------------------------------- */
+header {
+	text-align: center;
+	font-size: 120%;
+}
+
+.colorHeaderFooter {
+	background-color: rgb(87, 24, 103);
+	color: white;
+	/* Reminder - need to change followed-links color not just font color */
+}
+
+.fontSizeNav {
+	font-size: 200%;
+}
+
+nav {
+	padding: 20px;
+}
+
+nav a {
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: rgb(61, 123, 165);
+}
+
+
+/* ---------------------------------------------------------------------
+	MAIN Section with background image & containers & content formatting 
+------------------------------------------------------------------------ */
+
+main {
+
+}
+
+.bkgImageCoding {
+/*	background-image: url("bkg_coding_dark.jpg");*/
+	background-image: url("bkg_dav_coding_dark.jpg");
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* user cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+	padding: 20px 10px;
+}
+
+.containerFlex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	width: 100%;
+}
+
+.articleBox {
+	padding: 10px;
+	margin: 10px;
+	flex: 1 1 250px;
+	text-align: center;
+}
+
+.contentIntro {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	padding-left: 300px;
+}
+
+.textAboutMe {
+	color: white;
+/*	background-color: black;*/
+	background-color: rgb(87, 24, 103);
+	padding: 10px;
+	vertical-align: middle;
+/* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 20px;
+	padding-top: 10px;
+}
+
+.fontSizeMyName {
+	font-size: 230%;
+}
+
+.colorFontSections {
+	color: rgb(87, 24, 103);
+	text-align: center;
+}
+
+h1 {
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 210%;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+.justifyLeft {
+	text-align: left;
+}
+
+
+/* ------------------------------------------
+	FOOTER 
+--------------------------------------------- */
+footer {
+	text-align: center;
+	padding: 20px ;
+	font-size: 80%;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/* ------------------------------------------
+	COLOR Referencces 
+--------------------------------------------- */
+/*
+purple
+rgb(87, 24, 103)
+
+dark blue
+rgb(61, 123, 165)
+
+light blue
+rgb(82, 165, 224)
+
+light blue (same hue but more light)
+background-color:  hsl(205, 70%, 75%); 
+
+dark blue (same hue but more dark)
+background-color:  hsl(205, 70%, 60%);
+
+darker stone blue
+background-color:  hsl(204, 46%, 52%);
+		
+lighter stone blue
+background-color: hsl(204, 46%, 44%);
+*/
+
