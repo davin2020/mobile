@@ -1,21 +1,4 @@
-/* CSS Fiile for Davins Portfolio
-
-COLORS
-purple
-rgb(87, 24, 103)
-
-dark blue
-rgb(61, 123, 165)
-
-light blue
-rgb(82, 165, 224)
-
-/* light blue (same hue but more light)
-background-color:  hsl(205, 70%, 75%); 
-
-/* dark blue (same hue but more dark)
-background-color:  hsl(205, 70%, 60%);
-*/
+/* CSS Fiile for Davins Portfolio */
 
 
 /* -------------------------------------------------------------
@@ -37,22 +20,13 @@ body {
 /* ----------------------------------------------------------
 	Generic Classes for Containers & Cursive Font for Sections
 ------------------------------------------------------------- */
+/* Need to add some Media Queries here */
 .mainContainerGrid {
-	/*
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 40px auto auto auto auto 40px;
-	*/
 }
 
 .colorBackgroundDark {
-/*darker stone blue*/
-/*	background-color: rgb(61, 123, 165);*/ 
+	/*darker stone blue*/
 	background-color:  hsl(204, 46%, 52%);
-	
-	/*dark blue (same hue but more dark)*/
-/*	background-color:  hsl(205, 70%, 60%);*/
-/*	margin-bottom: 20px;*/
 	padding: 1px 0px;
 	padding-top: 10px;
 }
@@ -60,15 +34,8 @@ body {
 .colorBackgroundLight {
 	/*lighter stone blue*/
 	background-color: hsl(204, 46%, 44%);
-/*	background-color: rgb(82, 165, 224);*/
-	
-	/*light blue (same hue but more light)*/
-/*	background-color:  hsl(205, 70%, 75%);*/
-/*	margin-bottom: 20px;*/
 	padding: 1px 0px;
 	padding-top: 10px;
-/*	margin-top: 10px;*/
-	/*padding-top: 0px;*/
 }
 
 .fontCursive {
@@ -81,15 +48,13 @@ body {
 --------------------------------------------- */
 header {
 	text-align: center;
-/*	padding: 40px 0px ;*/
 	font-size: 120%;
-/*	margin-bottom: 20px;*/
 }
 
 .colorHeaderFooter {
 	background-color: rgb(87, 24, 103);
 	color: white;
-	/*need to change links not just font color */
+	/* Reminder - need to change followed-links color not just font color */
 }
 
 .fontSizeNav {
@@ -97,8 +62,6 @@ header {
 }
 
 nav {
-/*	background-color: gray;*/
-/*	margin: 20px;*/
 	padding: 20px;
 }
 
@@ -106,7 +69,6 @@ nav a {
 	padding: 10px;
 	color: white;
 	text-decoration: none;
-/*	background-color: gray;*/
 }
 
 nav a:hover {
@@ -119,21 +81,17 @@ nav a:hover {
 ------------------------------------------------------------------------ */
 
 main {
-/*	margin-top: 50px;*/
+
 }
 
 .bkgImageCoding {
 /*	background-image: url("bkg_coding_dark.jpg");*/
 	background-image: url("bkg_dav_coding_dark.jpg");
 	width: 100%;
-	height: auto;
-/*	max-width: 80vw;*/
-/*	height: 100%;*/
-/*	object-fit: contain; */
-	 background-size: cover; /* user cover to get full width, instead of contain */
-	 background-repeat: no-repeat;
-	 padding: 20px 10px;
-/*	 border: 2px solid red;*/
+	height: auto;	
+	background-size: cover; /* user cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+	padding: 20px 10px;
 }
 
 .containerFlex {
@@ -147,7 +105,6 @@ main {
 .articleBox {
 	padding: 10px;
 	margin: 10px;
-/*	width: 33%;*/
 	flex: 1 1 250px;
 	text-align: center;
 }
@@ -157,18 +114,11 @@ main {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-/*	align-items: center;*/
 	width: 50%;
 	padding-left: 300px;
-/*	text-align: center;*/
-/*	padding-right: 50px;*/
-/*	flex: 1 1 250px;*/
-/*	align-items: flex-end;*/
-/*	float: right;*/
 }
 
 .textAboutMe {
-/*	display: flex;*/
 	color: white;
 /*	background-color: black;*/
 	background-color: rgb(87, 24, 103);
@@ -177,10 +127,7 @@ main {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 20px;
-/*	padding-bottom: 10px;*/
 	padding-top: 10px;
-/*	text-align: middle;*/
-/*	align-text: center;*/
 }
 
 .fontSizeMyName {
@@ -196,8 +143,6 @@ h1 {
 	margin: 0px;
 	padding-top: 10px;
 	font-size: 210%;
-/*	font-style: bold;*/
-/*	padding-bottom: 5px;*/
 }
 
 h2 {
@@ -222,13 +167,6 @@ footer a {
 	text-decoration: none;
 }
 
-/*
-.textOnTopImage {
-	position: relative;
-	z-index: 20px;
-	width: 100%;
-}
-*/
 
 /* ------------------------------------------
 	COLOR Referencces 
@@ -249,5 +187,10 @@ background-color:  hsl(205, 70%, 75%);
 dark blue (same hue but more dark)
 background-color:  hsl(205, 70%, 60%);
 
+darker stone blue
+background-color:  hsl(204, 46%, 52%);
+		
+lighter stone blue
+background-color: hsl(204, 46%, 44%);
 */
 
