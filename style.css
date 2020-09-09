@@ -12,9 +12,19 @@ body {
 	padding: 0;
 	margin: 0;
 /*	background-color: rgb(61, 123, 165);*/
+	background-color:  hsl(204, 46%, 20%);
 	font-family: Verdana;
 	font-size: 90%;
+	
 }
+
+@media screen and (min-width: 1080px) {
+	.mainContainerGrid {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 
 
 /* ----------------------------------------------------------
@@ -75,7 +85,7 @@ nav {
 }
 
 nav a {
-	padding: 10px;
+	padding: 20px;
 	color: white;
 	text-decoration: none;
 }
@@ -88,6 +98,25 @@ a {
 	color: hsl(204, 46%, 10%);
 }
 
+
+@media screen and (max-width: 700px) {
+	nav {
+		padding: 10px;
+	}
+	.fontSizeNav {
+		font-size: 150%;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	nav a {
+		padding: 10px;
+	}
+	.fontSizeNav {
+		font-size: 150%;
+	}
+}
 
 /* ---------------------------------------------------------------------
 	MAIN Section with background image & containers & content formatting 
@@ -170,6 +199,12 @@ main {
 	padding-left: 300px;
 }
 
+@media screen and (max-width: 500px) {
+	.contentIntro {
+		padding-left: 150px;
+	}
+}
+
 .textAboutMe {
 	color: white;
 /*	background-color: black;*/
@@ -180,11 +215,21 @@ main {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 20px;
+	font-size: 130%;
 /*	padding-top: 20px;*/
 }
 
 .fontSizeMyName {
 	font-size: 250%;
+}
+
+@media screen and (max-width: 700px) {
+	.textAboutMe {
+		font-size: 100%;
+	}
+	.fontSizeMyName {
+		font-size: 200%;
+	}
 }
 
 .colorFontSections {
@@ -195,11 +240,17 @@ main {
 h1 {
 	margin: 0px;
 	padding: 10px 0px;
-	font-size: 210%;
+	font-size: 220%;
 }
 
 h2 {
 	font-size: 130%;
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 180%;
+	}
 }
 
 .justifyLeft {
