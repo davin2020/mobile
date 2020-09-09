@@ -4,6 +4,7 @@
 /* -------------------------------------------------------------
 	Generic Body Stuff 
 ---------------------------------------------------------------- */
+
 * {
 	box-sizing: border-box;
 }
@@ -11,11 +12,19 @@
 body {
 	padding: 0;
 	margin: 0;
-/*	background-color: rgb(61, 123, 165);*/
 	background-color:  hsl(204, 46%, 20%);
 	font-family: Verdana;
 	font-size: 90%;
 	
+}
+
+
+/* ---------------------------------------------------------------------------
+	Generic Classes for  Containers & Sections and Cursive Font for Sections
+---------------------------------------------------------------------------- */
+
+.mainContainerGrid {
+	/* nothing required here, only MQ later */
 }
 
 @media screen and (min-width: 1080px) {
@@ -25,29 +34,14 @@ body {
 	}
 }
 
-
-
-/* ----------------------------------------------------------
-	Generic Classes for Containers & Cursive Font for Sections
-------------------------------------------------------------- */
-/* Need to add some Media Queries here */
-.mainContainerGrid {
-}
-
 .colorBackgroundDark {
-	/*darker stone blue*/
+	/* darker stone blue - using HSL so can easily relate color-lightness */
 	background-color:  hsl(204, 46%, 44%);
-/*	padding: 1px 0px;*/ /* took out as messes w bkg imgs */
-/*	padding-top: 10px;*/
-/*	padding-bottom: 20px;*/
 }
 
 .colorBackgroundLight {
-	/*lighter stone blue*/
+	/* lighter stone blue - using HSL so can easily relate color-lightness */
 	background-color: hsl(204, 46%, 52%);
-/*	padding: 1px 0px;*/
-/*	padding-top: 10px;*/
-/*	padding-bottom: 20px;*/
 }
 
 .sectionPaddingBottom {
@@ -66,6 +60,7 @@ body {
 /* ------------------------------------------
 	HEADER & NAV 
 --------------------------------------------- */
+
 header {
 	text-align: center;
 	font-size: 120%;
@@ -98,23 +93,20 @@ a {
 	color: hsl(204, 46%, 10%);
 }
 
-
+/* MQ for Nav */
 @media screen and (max-width: 700px) {
-	nav {
-		padding: 10px;
-	}
 	.fontSizeNav {
 		font-size: 150%;
 	}
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	nav a {
 		padding: 10px;
 	}
-	.fontSizeNav {
-		font-size: 150%;
+	nav {
+		padding: 10px;
 	}
 }
 
@@ -122,49 +114,31 @@ a {
 	MAIN Section with background image & containers & content formatting 
 ------------------------------------------------------------------------ */
 
-main {
-
-}
-
 .bkgImageStyle {
-/*	background-image: url("bkg_coding_dark.jpg");*/
-/*	background-image: url("bkg_dav_coding_dark.jpg");*/
-/*	background-image: url("images/keyboard_chair2.jpg");*/
 	width: 100%;
 	height: auto;	
 	background-size: cover; /* user cover to get full width, instead of contain */
 	background-repeat: no-repeat;
-/*	padding: 20px 10px;*/
 	
 }
 
 .opacityBkgImages {
 	background-color: rgba(61,123,164,0.7);
-/*	gb(61,123,164)*/
 	padding-top: 10px;
 	padding-bottom: 20px;
 	
 }
 .bkgImagePicCoding {
-/*	background-image: url("bkg_coding_dark.jpg");*/
 	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
 }
+
 .bkgImagePicAbout {
-/*	background-image: url("bkg_coding_dark.jpg");*/
-/*	background-image: url("bkg_dav_coding_dark.jpg");*/
 	background-image: url("images/keyboard_chair2_v2.jpeg");
-/*	color: rgba(0,0,0,0.5);*/
-	
 }
-
-
 
 .bkgImagePicContact {
-/*	background-image: url("bkg_coding_dark.jpg");*/
-/*	background-image: url("bkg_dav_coding_dark.jpg");*/
 	background-image: url("images/blue_book_mac2_v2.jpeg");
 }
-
 
 .containerFlex {
 	display: flex;
@@ -172,7 +146,6 @@ main {
 	justify-content: space-evenly;
 	align-content: space-around;
 	width: 100%;
-/*	color: rgba(0,0,0,1);*/
 }
 
 .articleBox {
@@ -182,12 +155,16 @@ main {
 	text-align: center;
 }
 
+@media screen and (min-width: 1080px) { 
+	.articleBox {
+		margin: 40px;
+	}
+}
+
 .articleBorder {
 	border: 5px solid black;
 	border-radius: 10px;
 	border-color:  hsl(204, 46%, 20%);
-/*	border-color: rgb(87, 24, 103);*/
-/*	border-color: white;*/
 }
 
 .contentIntro {
@@ -199,7 +176,7 @@ main {
 	padding-left: 300px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	.contentIntro {
 		padding-left: 150px;
 	}
@@ -209,14 +186,12 @@ main {
 	color: white;
 /*	background-color: black;*/
 	background-color: rgb(87, 24, 103);
-	/*padding: 10px;*/
 	vertical-align: middle;
 /* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 20px;
 	font-size: 130%;
-/*	padding-top: 20px;*/
 }
 
 .fontSizeMyName {
@@ -247,7 +222,7 @@ h2 {
 	font-size: 130%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	h1 {
 		font-size: 180%;
 	}
@@ -257,9 +232,7 @@ h2 {
 	text-align: left;
 }
 
-
 .portflioImageSize {
-/*	width: 250px;*/
 	max-width: 80%;
 }
 
