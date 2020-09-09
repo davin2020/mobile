@@ -4,6 +4,7 @@
 /* -------------------------------------------------------------
 	Generic Body Stuff 
 ---------------------------------------------------------------- */
+
 * {
 	box-sizing: border-box;
 }
@@ -11,31 +12,44 @@
 body {
 	padding: 0;
 	margin: 0;
-/*	background-color: rgb(61, 123, 165);*/
+	background-color:  hsl(204, 46%, 20%);
 	font-family: Verdana;
-	font-size: 100%;
+	font-size: 90%;
+	
 }
 
 
-/* ----------------------------------------------------------
-	Generic Classes for Containers & Cursive Font for Sections
-------------------------------------------------------------- */
-/* Need to add some Media Queries here */
+/* ---------------------------------------------------------------------------
+	Generic Classes for  Containers & Sections and Cursive Font for Sections
+---------------------------------------------------------------------------- */
+
 .mainContainerGrid {
+	/* nothing required here, only MQ later */
+}
+
+@media screen and (min-width: 1080px) {
+	.mainContainerGrid {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .colorBackgroundDark {
-	/*darker stone blue*/
-	background-color:  hsl(204, 46%, 52%);
-	padding: 1px 0px;
-	padding-top: 10px;
+	/* darker stone blue - using HSL so can easily relate color-lightness */
+	background-color:  hsl(204, 46%, 44%);
 }
 
 .colorBackgroundLight {
-	/*lighter stone blue*/
-	background-color: hsl(204, 46%, 44%);
-	padding: 1px 0px;
-	padding-top: 10px;
+	/* lighter stone blue - using HSL so can easily relate color-lightness */
+	background-color: hsl(204, 46%, 52%);
+}
+
+.sectionPaddingBottom {
+	padding-bottom: 20px;
+}
+
+.sectionPaddingTop {
+	padding-top: 20px;
 }
 
 .fontCursive {
@@ -46,6 +60,7 @@ body {
 /* ------------------------------------------
 	HEADER & NAV 
 --------------------------------------------- */
+
 header {
 	text-align: center;
 	font-size: 120%;
@@ -54,7 +69,6 @@ header {
 .colorHeaderFooter {
 	background-color: rgb(87, 24, 103);
 	color: white;
-	/* Reminder - need to change followed-links color not just font color */
 }
 
 .fontSizeNav {
@@ -66,7 +80,7 @@ nav {
 }
 
 nav a {
-	padding: 10px;
+	padding: 20px;
 	color: white;
 	text-decoration: none;
 }
@@ -75,23 +89,55 @@ nav a:hover {
 	background-color: rgb(61, 123, 165);
 }
 
+a {
+	color: hsl(204, 46%, 10%);
+}
+
+/* MQ for Nav */
+@media screen and (max-width: 700px) {
+	.fontSizeNav {
+		font-size: 150%;
+	}
+}
+
+
+@media screen and (max-width: 550px) {
+	nav a {
+		padding: 10px;
+	}
+	nav {
+		padding: 10px;
+	}
+}
 
 /* ---------------------------------------------------------------------
 	MAIN Section with background image & containers & content formatting 
 ------------------------------------------------------------------------ */
 
-main {
-
-}
-
-.bkgImageCoding {
-/*	background-image: url("bkg_coding_dark.jpg");*/
-	background-image: url("bkg_dav_coding_dark.jpg");
+.bkgImageStyle {
 	width: 100%;
 	height: auto;	
 	background-size: cover; /* user cover to get full width, instead of contain */
 	background-repeat: no-repeat;
-	padding: 20px 10px;
+	
+}
+
+.opacityBkgImages {
+	background-color: rgba(61,123,164,0.7);
+	padding-top: 10px;
+	padding-bottom: 20px;
+	
+}
+.bkgImagePicCoding {
+	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
+}
+
+.bkgImagePicAbout {
+	background-image: url("images/keyboard_chair2_v2.jpeg");
+}
+
+.bkgImagePicContact {
+	background-image: url("images/blue_book_mac2_v2.jpeg");
 }
 
 .containerFlex {
@@ -104,9 +150,21 @@ main {
 
 .articleBox {
 	padding: 10px;
-	margin: 10px;
+	margin: 20px;
 	flex: 1 1 250px;
 	text-align: center;
+}
+
+@media screen and (min-width: 1080px) { 
+	.articleBox {
+		margin: 40px;
+	}
+}
+
+.articleBorder {
+	border: 5px solid black;
+	border-radius: 10px;
+	border-color:  hsl(204, 46%, 20%);
 }
 
 .contentIntro {
@@ -118,21 +176,35 @@ main {
 	padding-left: 300px;
 }
 
+@media screen and (max-width: 550px) {
+	.contentIntro {
+		padding-left: 150px;
+	}
+}
+
 .textAboutMe {
 	color: white;
 /*	background-color: black;*/
 	background-color: rgb(87, 24, 103);
-	padding: 10px;
 	vertical-align: middle;
 /* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 20px;
-	padding-top: 10px;
+	font-size: 130%;
 }
 
 .fontSizeMyName {
-	font-size: 230%;
+	font-size: 250%;
+}
+
+@media screen and (max-width: 700px) {
+	.textAboutMe {
+		font-size: 100%;
+	}
+	.fontSizeMyName {
+		font-size: 200%;
+	}
 }
 
 .colorFontSections {
@@ -142,18 +214,27 @@ main {
 
 h1 {
 	margin: 0px;
-	padding-top: 10px;
-	font-size: 210%;
+	padding: 10px 0px;
+	font-size: 220%;
 }
 
 h2 {
 	font-size: 130%;
 }
 
+@media screen and (max-width: 550px) {
+	h1 {
+		font-size: 180%;
+	}
+}
+
 .justifyLeft {
 	text-align: left;
 }
 
+.portfolioImageSize {
+	max-width: 80%;
+}
 
 /* ------------------------------------------
 	FOOTER 

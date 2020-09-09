@@ -6,6 +6,8 @@
   <title>Davin's Portfolio</title>
   <link href="normalize.css" type="text/css" rel="stylesheet">
   <link href="style.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
 <body>
@@ -21,10 +23,8 @@
 		</header>
 
 		<main>
-<!-- Section Name & Background Picture -->			
-			<section class="colorBackgroundDark bkgImageCoding">
-				<!-- <h1 class="fontCursive colorFontSections">About</h1> -->
-				<!-- bkg img not working as expecte -->
+<!-- Section: MyName & Background Picture -->			
+			<section class="colorBackgroundDark bkgImageStyle bkgImagePicCoding sectionPaddingBottom sectionPaddingTop">
 				<div class="containerFlex">
 					<article class="articleBox contentIntro">
 						<div>
@@ -39,64 +39,73 @@
 			</section>
 			
 <!-- Section About Me -->
-			<section class="colorBackgroundDark">
+			<section class="colorBackgroundDark bkgImageStyle bkgImagePicAbout">
+				<div class="opacityBkgImages">
 				<a name="About">
 				<h1 class="fontCursive colorFontSections">About</h1>
 				</a>
-				<!-- bkg img not working as expecte -->
-				<div class="containerFlex ">
+				<div class="containerFlex">
 					<article class="articleBox">
+						<p>Me:</p>
 						<p>I'm an IT Professional with over 12 years industry experience in New Zealand and the UK, pivoting into web development.</p>
+						<p>Experienced in documenting knowledge in order to reduce time & effort required to complete customer tasks</p>
 						
 					</article>
-<!--check for redundant class? below -->
 					<article class="articleBox"> 
 						<p>Interests:</p>
 						<p>making short films, psychology, travelling, science fiction</p>
 					</article>
 					<article class="articleBox">
 						<p>Education:</p>
-						<p>BSc Hons Computer Science integrated with IBM</p>
-						<p>Certificate in Applied Film & TV Production</p>
+						<p>BSc (Hons) in Computer Science integrated with IBM UK</p>
+						<p>Certificate in Applied Film-Making & TV Production</p>
 					</article>
 				</div>
+				</div>
+				
 			</section>
 			
-<!-- Section Portfolio-->
-			<section class="colorBackgroundLight">
+<!-- Section: Portfolio-->
+			<section class="colorBackgroundLight sectionPaddingBottom sectionPaddingTop">
 				<a name="Portfolio">
 				<h1 class="fontCursive colorFontSections">Portfolio</h1>
 				</a>
 				<div class="containerFlex">
-					<article class="articleBox">
+					<article class="articleBox articleBorder">
 						<h2>Project A</h2>
-						<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
 					</article>
-					<article class="articleBox">
-						<h2>Project B</h2>
-						<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+					<article class="articleBox articleBorder">
+						<h2>Powershell Scripts</h2>
+						<img src="images/pshell_create_pfolder.jpeg" alt="Screenshot of PowerShell script to create a Public Folder" class="portfolioImageSize">
+						<p>While working on a service desk, I created a Powershell script to create Public Folders in Exchange, as it was a common and time consuming task</p>
+						<a href="https://github.com/davin2020/powershell/blob/master/Create_PublicFolder_Redacted.ps1"><i class="fab fa-github-square fa-2x"></i></a>
 					</article>
-					<article class="articleBox">
-						<h2>Project C</h2>
-						<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+					<article class="articleBox articleBorder">
+						<h2>Short Films</h2>
+						<img src="images/film_arms_dealer.jpeg" alt="Film called The Arms Dealer" class="portfolioImageSize">
+						<p>Making short films as part of Team Salvador Dalek, often for 48 Hours Filming Challenge</p>
+						<a href="https://www.youtube.com/watch?v=mGH94zn9yKA"><i class="fab fa-youtube fa-2x"></i></a>
 					</article>
 				</div>
 			</section>
 			
-<!-- Section Skills-->
-			<section class="colorBackgroundDark">
-				<a name="Skills">
-				<h1 class="fontCursive colorFontSections">Skills</h1>
-				</a>
+<!-- Section: Skills-->
+			<section class="colorBackgroundDark sectionPaddingBottom sectionPaddingTop">			
+					<a name="Skills">
+						<h1 class="fontCursive colorFontSections">Skills</h1>
+					</a>
 				<div class="containerFlex">
-					<article class="articleBox">
-						<p class="justifyLeft">Currently learning as part of the Mayden web dev bootcamp:</p>
+					<article class="articleBox articleBorder">
+						<h2>Mayden Academy</h2>
+						<p class="justifyLeft">Enrolled on the full stack web development course and currently learning:</p>
 							<ul class="justifyLeft">
 								<li>HTML & CSS</li>
 								<li>Git & GitHub</li>
 							</ul>
 					</article>
-					<article class="articleBox">
+					<article class="articleBox articleBorder">
+						<h2>Programming</h2>
 						<p class="justifyLeft">Previous programming & application design experience </p>
 							<ul class="justifyLeft">
 								<li>Powershell scripting to manipulate Active Directory users & groups and Exchange mailboxes</li>
@@ -104,8 +113,9 @@
 								<li>Learned Java, JSP, JDBC & SQL to create a conference registration website</li>
 							</ul>
 					</article>
-					<article class="articleBox">
-						<p class="justifyLeft">Previous service delivery application experience</p>
+					<article class="articleBox articleBorder">
+						<h2>Service Delivery</h2>
+						<p class="justifyLeft">Previous service desk application experience</p>
 							<ul class="justifyLeft">
 								<li>ServiceNow, Ivanti/HEAT, VMWare, LANDesk, JIRA</li>
 								<li>Windows 10, 7, XP and Server 2008</li>
@@ -119,21 +129,23 @@
 				</div>
 			</section>
 			
-<!-- Section Contact-->
-			<section class="colorBackgroundLight">
+<!-- Section: Contact-->
+			<section class="colorBackgroundLight bkgImageStyle bkgImagePicContact">
+				<div class="opacityBkgImages">
 				<a name="Contact">
 				<h1 class="fontCursive colorFontSections">Contact</h1>
 				</a>
 				<div class="containerFlex">
 					<article class="articleBox">
-						<a href = "mailto: davin.hayden@outlook.com">davin.hayden@outlook.com</a>
+						<a href = "mailto:davin.hayden@outlook.com"><i class="fas fa-envelope-square fa-3x"></i><br>davin.hayden@outlook.com</a>
 					</article>
 					<article class="articleBox">
-						<a href="https://github.com/davin2020/davinportfolio">GitHub</a>
+						<a href="https://github.com/davin2020/davinportfolio" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
 					</article>
 					<article class="articleBox">
-						<a href="https://uk.linkedin.com/">LinkedIn</a>
+						<a href="https://www.linkedin.com/in/hayden0/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
 					</article>
+				</div>
 				</div>
 			</section>
 	
@@ -145,7 +157,7 @@
 			<a href="#">Portfolio</a> | 
 			<a href="#">Skills</a> |
 			<a href="#">Contact</a>
-			<p>Copyright Davin Hayden 2020</p>
+			<p>&#169; Davin Hayden 2020</p>
 		</footer>
 
 	</div>
