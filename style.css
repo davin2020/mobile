@@ -157,10 +157,7 @@ a {
 	margin: 20px;
 	flex: 1 1 250px;
 	text-align: center;
-/*	border: 5px;*/
 	border-radius: 10px;
-/*	border-color: #1C384A;*/
-/*	box-shadow: 5px 5px 10px 10px #1C384A;*/
 	box-shadow: inset 0 0 10px #1C384A;
 }
 
