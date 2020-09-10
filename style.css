@@ -127,6 +127,7 @@ a {
 	MAIN Section with background image & containers & content formatting 
 ------------------------------------------------------------------------ */
 
+/*remove */
 .bkgImageStyle {
 	width: 100%;
 	height: auto;	
@@ -134,6 +135,52 @@ a {
 	background-repeat: no-repeat;
 	
 }
+
+.layout__title {
+	background-color: #3D7BA4;
+	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
+	
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* user cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	
+}
+
+.layout__about-me {
+	
+	background-color: #3D7BA4;
+	background-image: url("images/keyboard_chair2_v2.jpeg");
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* user cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+}
+
+.layout__porfolio {
+	background-color: #4C90BD;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.layout__skills {
+	background-color: #3D7BA4;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.layout__contact-me {
+	background-color: #3D7BA4;
+	background-image: url("images/blue_book_mac2_v2.jpeg");
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* user cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+}
+
+
+
 
 .layout__bkgImage {
 	background-color: rgba(61,123,164,0.7);
@@ -238,20 +285,27 @@ a {
 }
 */
 
+/* needs to be stsyle for Davin Hayden */
 h1 {
 	margin: 0;
 	padding: 10px 0;
 	font-size: 220%;
 }
 
-h2 {
-	font-size: 130%;
-}
-
 @media screen and (max-width: 550px) {
 	h1 {
-		font-size: 180%;
+		font-size: 180%; /* clashing with MyName font size */
 	}
+}
+
+h2 {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 220%;
+}
+
+h3 {
+	font-size: 130%;
 }
 
 .text-align-bullet {
