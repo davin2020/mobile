@@ -50,9 +50,6 @@ body {
 	padding-top: 20px;
 }
 
-.fontCursive {
-	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
-}
 
 
 /* ------------------------------------------
@@ -64,18 +61,26 @@ header {
 	font-size: 120%;
 }
 
+/*
 .colorHeaderFooter {
-/*	background-color: rgb(87, 24, 103);*/
+	background-color: rgb(87, 24, 103); omit
 	background-color: #571867;
 	color: #FFFFFF;
 }
+*/
 
+/* 
 .fontSizeNav {
 	font-size: 200%;
 }
+*/
 
 nav {
 	padding: 20px;
+	background-color: #571867;
+	color: #FFFFFF;
+	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-size: 200%;
 }
 
 nav a {
@@ -96,7 +101,7 @@ a {
 
 /* MQ for Nav */
 @media screen and (max-width: 700px) {
-	.fontSizeNav {
+	nav {
 		font-size: 150%;
 	}
 }
@@ -231,7 +236,7 @@ h2 {
 	}
 }
 
-.justifyLeft {
+.text-align-bullet {
 	text-align: left;
 }
 
@@ -246,6 +251,8 @@ footer {
 	text-align: center;
 	padding: 20px ;
 	font-size: 80%;
+	background-color: #571867;
+	color: #FFFFFF;
 }
 footer a {
 	color: #FFFFFF;
