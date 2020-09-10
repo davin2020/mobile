@@ -50,6 +50,13 @@ body {
 	padding-top: 20px;
 }
 
+.section__title {
+	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+/* 	color: rgb(87, 24, 103);*/
+ 	color: #571867;
+ 	text-align: center;
+
+}
 
 
 /* ------------------------------------------
@@ -128,10 +135,11 @@ a {
 	
 }
 
-.opacityBkgImages {
+.layout__bkgImage {
 	background-color: rgba(61,123,164,0.7);
 	padding-top: 10px;
 	padding-bottom: 20px;
+	
 }
 
 .bkgImagePicCoding {
@@ -146,7 +154,8 @@ a {
 	background-image: url("images/blue_book_mac2_v2.jpeg");
 }
 
-.containerFlex {
+/* containerFlex */
+.section__container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -154,7 +163,8 @@ a {
 	width: 100%;
 }
 
-.articleBox {
+/*articleBox*/
+.section__box {
 	padding: 10px;
 	margin: 20px;
 	flex: 1 1 250px;
@@ -162,12 +172,18 @@ a {
 }
 
 @media screen and (min-width: 1080px) { 
-	.articleBox {
+	.section__box {
 		margin: 40px;
 	}
 }
 
-.articleBorder {
+/*articleBorder*/
+.section__box-emphasis {
+	padding: 10px;
+	margin: 20px;
+	flex: 1 1 250px;
+	text-align: center;
+	
 	border: 5px solid black;
 	border-radius: 10px;
 /*	border-color:  hsl(204, 46%, 20%);*/
@@ -214,11 +230,13 @@ a {
 	}
 }
 
+/*
 .colorFontSections {
-/*	color: rgb(87, 24, 103);*/
+	color: rgb(87, 24, 103);
 	color: #571867;
 	text-align: center;
 }
+*/
 
 h1 {
 	margin: 0;
