@@ -1,6 +1,5 @@
 /* CSS Fiile for Davins Portfolio */
 
-
 /* -------------------------------------------------------------
 	Generic Body Stuff 
 ---------------------------------------------------------------- */
@@ -12,51 +11,9 @@
 body {
 	padding: 0;
 	margin: 0;
-/*	background-color:  hsl(204, 46%, 20%);*/
 	background-color: #1C384A;
 	font-family: Verdana;
 	font-size: 90%;	
-}
-
-
-/* ---------------------------------------------------------------------------
-	Generic Classes for  Containers & Sections and Cursive Font for Sections
----------------------------------------------------------------------------- */
-
-@media screen and (min-width: 1080px) {
-	.mainContainerGrid {
-		width: 80%;
-		margin: 0 auto;
-	}
-}
-
-.colorBackgroundDark {
-	/* darker stone blue - using HSL so can easily relate color-lightness */
-/*	background-color:  hsl(204, 46%, 44%);*/
-	background-color: #3D7BA4;
-}
-
-.colorBackgroundLight {
-	/* lighter stone blue - using HSL so can easily relate color-lightness */
-/*	background-color: hsl(204, 46%, 52%);*/
-	background-color: #4C90BD;
-}
-
-.sectionPaddingBottom {
-	padding-bottom: 20px;
-}
-
-.sectionPaddingTop {
-	padding-top: 20px;
-}
-
-
-.section__title {
-	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
-/* 	color: rgb(87, 24, 103);*/
- 	color: #571867;
- 	text-align: center;
-
 }
 
 
@@ -68,20 +25,6 @@ header {
 	text-align: center;
 	font-size: 120%;
 }
-
-/*
-.colorHeaderFooter {
-	background-color: rgb(87, 24, 103); omit
-	background-color: #571867;
-	color: #FFFFFF;
-}
-*/
-
-/* 
-.fontSizeNav {
-	font-size: 200%;
-}
-*/
 
 nav {
 	padding: 20px;
@@ -98,22 +41,18 @@ nav a {
 }
 
 nav a:hover {
-/*	background-color: rgb(61, 123, 165);*/
 	background-color: #3D7BA5;
 }
 
 a {
-/*	color: hsl(204, 46%, 10%);*/
 	color: #0E1C25;
 }
 
-/* MQ for Nav */
 @media screen and (max-width: 700px) {
 	nav {
 		font-size: 150%;
 	}
 }
-
 
 @media screen and (max-width: 550px) {
 	nav a {
@@ -125,38 +64,40 @@ a {
 }
 
 /* ---------------------------------------------------------------------
-	MAIN Section with background image & containers & content formatting 
+	MAIN Section with containers & background images & content formatting etc
 ------------------------------------------------------------------------ */
 
-/*remove */
-.bkgImageStyle {
-	width: 100%;
-	height: auto;	
-	background-size: cover; /* user cover to get full width, instead of contain */
-	background-repeat: no-repeat;
-	
+
+@media screen and (min-width: 1080px) {
+	.mainContainerGrid {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.section__title {
+	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+ 	color: #571867;
+ 	text-align: center;
 }
 
 .layout__title {
 	background-color: #3D7BA4;
 	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
-	
 	width: 100%;
 	height: auto;	
-	background-size: cover; /* user cover to get full width, instead of contain */
+	background-size: cover; /* use cover to get full width, instead of contain */
 	background-repeat: no-repeat;
 	padding-bottom: 20px;
 	padding-top: 20px;
-	
 }
 
 .layout__about-me {
-	
 	background-color: #3D7BA4;
 	background-image: url("images/keyboard_chair2_v2.jpeg");
 	width: 100%;
 	height: auto;	
-	background-size: cover; /* user cover to get full width, instead of contain */
+	background-size: cover; /* use cover to get full width, instead of contain */
 	background-repeat: no-repeat;
 }
 
@@ -165,6 +106,7 @@ a {
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
+
 .layout__skills {
 	background-color: #3D7BA4;
 	padding-bottom: 20px;
@@ -176,42 +118,22 @@ a {
 	background-image: url("images/blue_book_mac2_v2.jpeg");
 	width: 100%;
 	height: auto;	
-	background-size: cover; /* user cover to get full width, instead of contain */
+	background-size: cover; /* use cover to get full width, instead of contain */
 	background-repeat: no-repeat;
 }
-
-
-
 
 .layout__bkgImage {
 	background-color: rgba(61,123,164,0.7);
 	padding-top: 10px;
 	padding-bottom: 20px;
-	
 }
 
-.bkgImagePicCoding {
-	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
+@media screen and (max-width: 550px) {
+	.container__title {
+		padding-left: 150px;
+	}
 }
 
-.bkgImagePicAbout {
-	background-image: url("images/keyboard_chair2_v2.jpeg");
-}
-
-.bkgImagePicContact {
-	background-image: url("images/blue_book_mac2_v2.jpeg");
-}
-
-/* containerFlex */
-.section__container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-content: space-around;
-	width: 100%;
-}
-
-/*articleBox*/
 .section__box {
 	padding: 10px;
 	margin: 20px;
@@ -225,17 +147,22 @@ a {
 	}
 }
 
-/*articleBorder*/
 .section__box-emphasis {
 	padding: 10px;
 	margin: 20px;
 	flex: 1 1 250px;
 	text-align: center;
-	
 	border: 5px solid black;
 	border-radius: 10px;
-/*	border-color:  hsl(204, 46%, 20%);*/
 	border-color: #1C384A;
+}
+
+.section__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	width: 100%;
 }
 
 .container__title {
@@ -247,31 +174,15 @@ a {
 	padding-left: 300px;
 }
 
-@media screen and (max-width: 550px) {
-	.container__title {
-		padding-left: 150px;
-	}
+.portfolio-images {
+	max-width: 80%;
 }
 
-.title-subheading {
-	color: #FFFFFF;
-/*	background-color: rgb(87, 24, 103);*/
-	background-color: #571867;
-	vertical-align: middle;
-/* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 20px;
-	font-size: 130%;
-}
-
-/* .text-title-name  */
 h1 {
 	color: #FFFFFF;
-/*	background-color: rgb(87, 24, 103);*/
 	background-color: #571867;
 	vertical-align: middle;
-/* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
+/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading  */
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 20px;
@@ -280,7 +191,16 @@ h1 {
 	text-align: center;
 }
 
-/* needs to be stsyle for Davin Hayden */
+.title-subheading {
+	color: #FFFFFF;
+	background-color: #571867;
+	vertical-align: middle;
+/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading */
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px;
+	font-size: 130%;
+}
 
 @media screen and (max-width: 700px) {
 	.text-title-subheading {
@@ -296,25 +216,7 @@ h1 {
 		font-size: 180%; /* clashing with MyName font size */
 	}
 }
-	 
-
-/*
-.fontSizeMyName {
-	font-size: 250%;
-}
-*/
-
-
-
-/*
-.colorFontSections {
-	color: rgb(87, 24, 103);
-	color: #571867;
-	text-align: center;
-}
-*/
-
-
+	
 
 h2 {
 	margin: 0;
@@ -330,9 +232,6 @@ h3 {
 	text-align: left;
 }
 
-.portfolioImageSize {
-	max-width: 80%;
-}
 
 /* ------------------------------------------
 	FOOTER 
