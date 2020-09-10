@@ -50,6 +50,7 @@ body {
 	padding-top: 20px;
 }
 
+
 .section__title {
 	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
 /* 	color: rgb(87, 24, 103);*/
@@ -237,7 +238,7 @@ a {
 	border-color: #1C384A;
 }
 
-.contentIntro {
+.container__title {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -247,12 +248,12 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-	.contentIntro {
+	.container__title {
 		padding-left: 150px;
 	}
 }
 
-.textAboutMe {
+.title-subheading {
 	color: #FFFFFF;
 /*	background-color: rgb(87, 24, 103);*/
 	background-color: #571867;
@@ -264,18 +265,46 @@ a {
 	font-size: 130%;
 }
 
-.fontSizeMyName {
+/* .text-title-name  */
+h1 {
+	color: #FFFFFF;
+/*	background-color: rgb(87, 24, 103);*/
+	background-color: #571867;
+	vertical-align: middle;
+/* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px;
 	font-size: 250%;
+	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	text-align: center;
 }
 
+/* needs to be stsyle for Davin Hayden */
+
 @media screen and (max-width: 700px) {
-	.textAboutMe {
+	.text-title-subheading {
 		font-size: 100%;
 	}
-	.fontSizeMyName {
+	h1  {
 		font-size: 200%;
 	}
 }
+
+@media screen and (max-width: 550px) {
+	h1 {
+		font-size: 180%; /* clashing with MyName font size */
+	}
+}
+	 
+
+/*
+.fontSizeMyName {
+	font-size: 250%;
+}
+*/
+
+
 
 /*
 .colorFontSections {
@@ -285,18 +314,7 @@ a {
 }
 */
 
-/* needs to be stsyle for Davin Hayden */
-h1 {
-	margin: 0;
-	padding: 10px 0;
-	font-size: 220%;
-}
 
-@media screen and (max-width: 550px) {
-	h1 {
-		font-size: 180%; /* clashing with MyName font size */
-	}
-}
 
 h2 {
 	margin: 0;
