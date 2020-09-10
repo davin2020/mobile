@@ -12,7 +12,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color:  hsl(204, 46%, 20%);
+/*	background-color:  hsl(204, 46%, 20%);*/
+	background-color: #1C384A;
 	font-family: Verdana;
 	font-size: 90%;	
 }
@@ -31,12 +32,14 @@ body {
 
 .colorBackgroundDark {
 	/* darker stone blue - using HSL so can easily relate color-lightness */
-	background-color:  hsl(204, 46%, 44%);
+/*	background-color:  hsl(204, 46%, 44%);*/
+	background-color: #3D7BA4;
 }
 
 .colorBackgroundLight {
 	/* lighter stone blue - using HSL so can easily relate color-lightness */
-	background-color: hsl(204, 46%, 52%);
+/*	background-color: hsl(204, 46%, 52%);*/
+	background-color: #4C90BD;
 }
 
 .sectionPaddingBottom {
@@ -62,8 +65,9 @@ header {
 }
 
 .colorHeaderFooter {
-	background-color: rgb(87, 24, 103);
-	color: white;
+/*	background-color: rgb(87, 24, 103);*/
+	background-color: #571867;
+	color: #FFFFFF;
 }
 
 .fontSizeNav {
@@ -76,16 +80,18 @@ nav {
 
 nav a {
 	padding: 20px;
-	color: white;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
 nav a:hover {
-	background-color: rgb(61, 123, 165);
+/*	background-color: rgb(61, 123, 165);*/
+	background-color: #3D7BA5;
 }
 
 a {
-	color: hsl(204, 46%, 10%);
+/*	color: hsl(204, 46%, 10%);*/
+	color: #0E1C25;
 }
 
 /* MQ for Nav */
@@ -159,7 +165,8 @@ a {
 .articleBorder {
 	border: 5px solid black;
 	border-radius: 10px;
-	border-color:  hsl(204, 46%, 20%);
+/*	border-color:  hsl(204, 46%, 20%);*/
+	border-color: #1C384A;
 }
 
 .contentIntro {
@@ -178,8 +185,9 @@ a {
 }
 
 .textAboutMe {
-	color: white;
-	background-color: rgb(87, 24, 103);
+	color: #FFFFFF;
+/*	background-color: rgb(87, 24, 103);*/
+	background-color: #571867;
 	vertical-align: middle;
 /* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
 	margin-top: 0;
@@ -202,7 +210,8 @@ a {
 }
 
 .colorFontSections {
-	color: rgb(87, 24, 103);
+/*	color: rgb(87, 24, 103);*/
+	color: #571867;
 	text-align: center;
 }
 
@@ -239,7 +248,7 @@ footer {
 	font-size: 80%;
 }
 footer a {
-	color: white;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
