@@ -14,18 +14,13 @@ body {
 	margin: 0;
 	background-color:  hsl(204, 46%, 20%);
 	font-family: Verdana;
-	font-size: 90%;
-	
+	font-size: 90%;	
 }
 
 
 /* ---------------------------------------------------------------------------
 	Generic Classes for  Containers & Sections and Cursive Font for Sections
 ---------------------------------------------------------------------------- */
-
-.mainContainerGrid {
-	/* nothing required here, only MQ later */
-}
 
 @media screen and (min-width: 1080px) {
 	.mainContainerGrid {
@@ -126,8 +121,8 @@ a {
 	background-color: rgba(61,123,164,0.7);
 	padding-top: 10px;
 	padding-bottom: 20px;
-	
 }
+
 .bkgImagePicCoding {
 	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
 }
@@ -184,12 +179,11 @@ a {
 
 .textAboutMe {
 	color: white;
-/*	background-color: black;*/
 	background-color: rgb(87, 24, 103);
 	vertical-align: middle;
 /* need to set top & bottom margins to 0 so there is no space between the text for the Name and Role */
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
 	padding: 20px;
 	font-size: 130%;
 }
@@ -213,8 +207,8 @@ a {
 }
 
 h1 {
-	margin: 0px;
-	padding: 10px 0px;
+	margin: 0;
+	padding: 10px 0;
 	font-size: 220%;
 }
 
