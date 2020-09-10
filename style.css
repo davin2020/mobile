@@ -1,0 +1,277 @@
+/* CSS Fiile for Davins Portfolio */
+
+/* -------------------------------------------------------------
+	Generic Body Stuff 
+---------------------------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #1C384A;
+	font-family: Verdana;
+	font-size: 90%;	
+}
+
+
+/* ------------------------------------------
+	HEADER & NAV 
+--------------------------------------------- */
+
+header {
+	text-align: center;
+	font-size: 120%;
+}
+
+nav {
+	padding: 25px;
+	background-color: #571867;
+	color: #FFFFFF;
+	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-size: 200%;
+}
+
+nav a {
+	padding: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #3D7BA5;
+}
+
+a {
+	color: #0E1C25;
+}
+
+@media screen and (max-width: 700px) {
+	nav {
+		font-size: 150%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	nav a {
+		padding: 7px;
+	}
+	nav {
+		padding: 15px;
+	}
+}
+
+/* ---------------------------------------------------------------------
+	MAIN Section with containers & background images & content formatting etc
+------------------------------------------------------------------------ */
+
+
+@media screen and (min-width: 1080px) {
+	.mainContainerGrid {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.section__title {
+	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+ 	color: #571867;
+ 	text-align: center;
+}
+
+.layout__title {
+	background-color: #3D7BA4;
+	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* use cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.layout__about-me {
+	background-color: #3D7BA4;
+	background-image: url("images/keyboard_chair2_v2.jpeg");
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* use cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+}
+
+.layout__porfolio {
+	background-color: #4C90BD;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.layout__skills {
+	background-color: #3D7BA4;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.layout__contact-me {
+	background-color: #3D7BA4;
+	background-image: url("images/blue_book_mac2_v2.jpeg");
+	width: 100%;
+	height: auto;	
+	background-size: cover; /* use cover to get full width, instead of contain */
+	background-repeat: no-repeat;
+}
+
+.layout__bkgImage {
+	background-color: rgba(61,123,164,0.7);
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 550px) {
+	.container__title {
+		padding-left: 150px;
+	}
+}
+
+.section__box {
+	padding: 10px;
+	margin: 20px;
+	flex: 1 1 250px;
+	text-align: center;
+}
+
+@media screen and (min-width: 1080px) { 
+	.section__box {
+		margin: 40px;
+	}
+}
+
+.section__box-emphasis {
+	padding: 10px;
+	margin: 20px;
+	flex: 1 1 250px;
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 10px;
+	border-color: #1C384A;
+}
+
+.section__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	width: 100%;
+}
+
+.container__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	padding-left: 300px;
+}
+
+.portfolio-images {
+	max-width: 80%;
+}
+
+h1 {
+	color: #FFFFFF;
+	background-color: #571867;
+	vertical-align: middle;
+/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading  */
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px;
+	font-size: 250%;
+	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	text-align: center;
+}
+
+.title-subheading {
+	color: #FFFFFF;
+	background-color: #571867;
+	vertical-align: middle;
+/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading */
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 20px;
+	font-size: 130%;
+}
+
+@media screen and (max-width: 700px) {
+	.text-title-subheading {
+		font-size: 100%;
+	}
+	h1  {
+		font-size: 200%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	h1 {
+		font-size: 180%; /* clashing with MyName font size */
+	}
+}
+	
+
+h2 {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 220%;
+}
+
+h3 {
+	font-size: 130%;
+}
+
+.text-align-bullet {
+	text-align: left;
+}
+
+
+/* ------------------------------------------
+	FOOTER 
+--------------------------------------------- */
+footer {
+	text-align: center;
+	padding: 20px ;
+	font-size: 80%;
+	background-color: #571867;
+	color: #FFFFFF;
+}
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/* ------------------------------------------
+	COLOR Referencces 
+--------------------------------------------- */
+/*
+purple
+rgb(87, 24, 103)
+
+dark blue
+rgb(61, 123, 165)
+
+light blue
+rgb(82, 165, 224)
+
+light blue (same hue but more light)
+background-color:  hsl(205, 70%, 75%); 
+
+dark blue (same hue but more dark)
+background-color:  hsl(205, 70%, 60%);
+
+darker stone blue
+background-color:  hsl(204, 46%, 52%);
+		
+lighter stone blue
+background-color: hsl(204, 46%, 44%);
+*/
+
