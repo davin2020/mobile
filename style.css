@@ -142,7 +142,7 @@ a {
 .section__box {
 	padding: 10px;
 	margin: 20px;
-	flex: 1 1 250px;
+	flex: 1 1 260px;
 	text-align: center;
 }
 
@@ -155,7 +155,7 @@ a {
 .section__box-emphasis {
 	padding: 10px;
 	margin: 20px;
-	flex: 1 1 250px;
+	flex: 1 1 300px; /* was 250 */
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: inset 0 0 10px #1C384A;
@@ -191,7 +191,7 @@ a {
 }
 
 .portfolio-images {
-	max-width: 80%;
+	max-width: 70%;
 }
 
 h1 {
