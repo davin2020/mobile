@@ -44,8 +44,19 @@ nav a:hover {
 	background-color: #3D7BA5;
 }
 
-a {
+/* links to GH & other external sites */
+a i {
 	color: #0E1C25;
+}
+
+a:hover i {
+	color: #571867;
+}
+
+.tech_icons i {
+	/*border: 1px solid red;*/
+	color: #000000;
+	padding: 5px 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -192,6 +203,15 @@ a {
 
 .portfolio-images {
 	max-width: 70%;
+	border-radius: 10px;
+	/* show a transparent border around clickable images */
+	border: 5px solid rgba(87, 24, 103, 0);
+}
+
+a:hover .portfolio-images {
+	border-radius: 10px;
+	/* show an opaque border around clickable images on hover */
+	border: 5px solid rgba(87, 24, 103, 1);
 }
 
 h1 {
@@ -277,6 +297,7 @@ rgb(61, 123, 165)
 
 light blue
 rgb(82, 165, 224)
+#571867
 
 light blue (same hue but more light)
 background-color:  hsl(205, 70%, 75%); 
