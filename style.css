@@ -44,8 +44,19 @@ nav a:hover {
 	background-color: #3D7BA5;
 }
 
-a {
+/* links to GH & other external sites */
+a i {
 	color: #0E1C25;
+}
+
+a:hover i {
+	color: #571867;
+}
+
+.tech_icons i {
+	/*border: 1px solid red;*/
+	color: #000000;
+	padding: 5px 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -87,9 +98,10 @@ a {
 }
 
 .section__title {
-	 font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
  	color: #571867;
  	text-align: center;
+	/*font-weight: bolder;*/
 }
 
 .layout__title {
@@ -134,7 +146,7 @@ a {
 }
 
 .layout__bkgImage {
-	background-color: rgba(61,123,164,0.7);
+	background-color: rgba(61,123,164,0.8);
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
@@ -153,12 +165,12 @@ a {
 }
 
 .section__box-emphasis {
-	padding: 10px;
+	padding: 20px;
 	margin: 20px;
 	flex: 1 1 300px; /* was 250 */
 	text-align: center;
 	border-radius: 10px;
-	box-shadow: inset 0 0 10px #1C384A;
+	box-shadow: inset 0 0 10px white;
 }
 
 .section__container {
@@ -192,6 +204,15 @@ a {
 
 .portfolio-images {
 	max-width: 70%;
+	border-radius: 10px;
+	/* show a transparent border around clickable images */
+	border: 5px solid rgba(87, 24, 103, 0);
+}
+
+a:hover .portfolio-images {
+	border-radius: 10px;
+	/* show an opaque border around clickable images on hover */
+	border: 5px solid rgba(87, 24, 103, 1);
 }
 
 h1 {
@@ -237,11 +258,11 @@ h1 {
 h2 {
 	margin: 0;
 	padding: 10px 0;
-	font-size: 220%;
+	font-size: 240%;
 }
 
 h3 {
-	font-size: 130%;
+	font-size: 140%;
 }
 
 .text-align-bullet {
@@ -277,6 +298,7 @@ rgb(61, 123, 165)
 
 light blue
 rgb(82, 165, 224)
+#571867
 
 light blue (same hue but more light)
 background-color:  hsl(205, 70%, 75%); 
