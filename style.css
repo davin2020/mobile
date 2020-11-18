@@ -1,4 +1,4 @@
-/* CSS Fiile for Davins Portfolio */
+/* CSS File for Davin's Portfolio Website */
 
 /* -------------------------------------------------------------
 	Generic Body Stuff 
@@ -13,9 +13,11 @@ body {
 	margin: 0;
 	background-color: #1C384A;
 	font-family: Verdana;
-	font-size: 90%;	
+	font-size: 90%;
+	line-height: 1.4rem;
 }
 
+@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);
 
 /* ------------------------------------------
 	HEADER & NAV 
@@ -170,7 +172,7 @@ a:hover i {
 	flex: 1 1 300px; /* was 250 */
 	text-align: center;
 	border-radius: 10px;
-	box-shadow: inset 0 0 10px white;
+	box-shadow: inset 0 0 10px #fff;
 }
 
 .section__container {
@@ -223,9 +225,10 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 20px;
-	font-size: 250%;
+	font-size: 260%;
 	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	text-align: center;
+	letter-spacing: 0.2rem;
 }
 
 .title-subheading {
