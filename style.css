@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);
 /* CSS File for Davin's Portfolio Website */
 
 /* -------------------------------------------------------------
@@ -17,7 +18,7 @@ body {
 	line-height: 1.4rem;
 }
 
-@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);
+
 
 /* ------------------------------------------
 	HEADER & NAV 
@@ -47,23 +48,36 @@ nav a:hover {
 }
 
 /* links to GH & other external sites - was #0E1C25 1C384A */
-a i {
+.github_link a i {
 	color: #ffffff;
 }
 
-a:hover i {
+.github_link a:hover i {
 	color: #571867;
 }
+
+/*a i {*/
+/*	color: #ffffff;*/
+/*}*/
+
+/*a:hover i {*/
+/*	color: #571867;*/
+/*}*/
 
 .layout__contact-me i {
 	color: #000;
 }
 
-/*parent would need to be flexbox? - try purple? 571867*/
-.tech_icons i {
+.layout__contact-me a:hover i {
+	color: #571867;
+}
+.group_icons {
 	color: #000000;
+	margin-top: auto;
+}
+
+.tech_icons i {
 	padding: 5px 10px;
-	align-self: flex-end;
 }
 
 @media screen and (max-width: 700px) {
@@ -109,7 +123,6 @@ a:hover i {
 	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
  	color: #571867;
  	text-align: center;
-	/*font-weight: bolder;*/
 }
 
 .layout__title {
@@ -165,6 +178,7 @@ a:hover i {
 	flex: 1 1 260px;
 	text-align: center;
 }
+
 .section__box-emphasis {
 	padding: 20px;
 	margin: 20px;
@@ -172,7 +186,17 @@ a:hover i {
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: inset 0 0 10px #fff;
-	align-content: flex-end;
+	/* need this to flex & center items, so that tech icons stay at bottom */
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* need this as some pics in flex are not being centered properly */
+}
+
+.section__box-emphasis-noflex {
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: inset 0 0 10px #fff;
 }
 
 @media screen and (min-width: 700px) {
@@ -180,8 +204,6 @@ a:hover i {
 		margin: 30px;
 	}
 	.section__box-emphasis {
-		margin-left: 30px;
-		margin-right: 30px;
 		max-width: 70%;
 	}
 }
@@ -292,6 +314,8 @@ h3 {
 
 .text-align-bullet {
 	text-align: left;
+	/* need this so text is left aligned, as parent flex content is centered */
+	align-self: flex-start;
 }
 
 
@@ -337,4 +361,3 @@ background-color:  hsl(204, 46%, 52%);
 lighter stone blue
 background-color: hsl(204, 46%, 44%);
 */
-
