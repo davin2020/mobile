@@ -1,2 +1,2 @@
 # davinportfolio
-Portfolio for Mayden Academy wk2 Project - Mobile testing option
+Web Dev Portfolio for Davin - this repo is for testing out how things look on my mobile, without affecting the live portfolio at https://github.com/davin2020/
