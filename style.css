@@ -69,6 +69,11 @@ nav a:hover {
 /*	color: #571867;*/
 /*}*/
 
+.layout__skills a:visited {
+	/*color: #571867; !* purple *!*/
+	color: #1C384A; /* slate */
+}
+
 .layout__contact-me i {
 	color: #000;
 }
@@ -151,13 +156,15 @@ nav a:hover {
 }
 
 .layout__porfolio {
-	background-color: #4C90BD;
+	/*background-color: #4C90BD;*/
+	background-color: #9cc3d5ff;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
 
 .layout__skills {
-	background-color: #3D7BA4;
+	/*background-color: #3D7BA4;*/
+	background-color: #85b3d1ff;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
@@ -172,7 +179,8 @@ nav a:hover {
 }
 
 .layout__bkgImage {
-	background-color: rgba(61,123,164,0.8);
+	/*background-color: rgba(61,123,164,0.8);*/
+	background-color: rgba(133,179,209,0.8);
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
