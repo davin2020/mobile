@@ -1,12 +1,11 @@
 # mobile repo, for testing out davinportfolio repo
 
 ## About
-This is the beta or mobile-testing version of my portfolio website, which is live here - https://github.com/davin2020/
-This repo is used for testing out how things look/function on my mobile, without affecting the live site.
+This is the beta or mobile-testing version of my portfolio website, which has a repo here - https://github.com/davin2020/davin2020.github.io
+
+This repo is used for testing out how things look/function on my mobile, without affecting the live site at https://davin2020.github.io/
 
 ## Live Demo 
-This repo is live here - https://github.com/davin2020/mobile
+This repo is live here - https://davin2020.github.io/mobile/
 
-## Install & Run Locally
-1. clone the repo
-2. Open index.html in a web browser
+### This repo is not intended to be cloned by others
