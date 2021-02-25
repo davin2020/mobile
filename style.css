@@ -87,6 +87,15 @@ nav a:hover {
 	margin-top: auto;
 }
 
+.tech_icons span {
+	font-family: 'Courier New', monospace;
+	color: #FFFFFF;
+	background-color: #571867; /* try black & white? */
+	font-size: 120%;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+}
+
 .tech_icons i {
 	padding: 5px 10px;
 }
@@ -286,7 +295,7 @@ h1 {
 	font-size: 260%;
 	font-family:'Courier New', 'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	text-align: center;
-	letter-spacing: 0.2rem;
+	etter-spacing: 0.2rem;l
 }
 
 .title-subheading {
